@@ -1,0 +1,19 @@
+{
+  "paths": {
+    "datasets": "/Users/jannisbrakel/datasets"
+  },
+  "project": {
+    "projectName": "darts",
+    "run": 5
+  },
+  "dataset": {
+    "startSecond": null,
+    "stopSecond": null,
+    "totalFrames": 30,
+    "splitRatio": [0.8, 0.1, 0.1]
+  },
+  "yolo": {
+    "model": "small",
+    "classNames": ["db", "d20_p0", "d20_p1", "d6_p0", "d6_p1", "d3_p0", "d3_p1", "d11_p0", "d11_p1"]
+  }
+}
