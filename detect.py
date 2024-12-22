@@ -33,7 +33,8 @@ if __name__ == "__main__":
     ################################################################################################
 
     # video
-    pathVideo = '/Users/jannisbrakel/datasets/darts/run_4/videos/video_10.mp4'
+    # pathVideo = '/home/jannis/Datasets/Darts/run_1/videos/video_02.mp4'
+    pathVideo = '/home/jannis/Datasets/Darts/run_1/videos/video_01.MP4'
 
     ################################################################################################
 
@@ -98,5 +99,5 @@ if __name__ == "__main__":
             cv2.moveWindow("output", 0, 0)
 
             # quit video
-            if cv2.waitKey(0) & 0xFF == ord('q'):
+            if cv2.waitKey(1) & 0xFF == ord('q'):
                 break

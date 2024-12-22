@@ -1,15 +1,15 @@
 {
   "paths": {
-    "datasets": "/Users/jannisbrakel/datasets"
+    "datasets": "/home/jannis/Datasets/"
   },
   "project": {
-    "projectName": "darts",
-    "run": 5
+    "projectName": "Darts",
+    "run": 1
   },
   "dataset": {
     "startSecond": null,
     "stopSecond": null,
-    "totalFrames": 30,
+    "totalFrames": 2,
     "splitRatio": [0.8, 0.1, 0.1]
   },
   "yolo": {

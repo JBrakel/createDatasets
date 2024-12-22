@@ -16,20 +16,21 @@ def main():
     pathDatasets = configData["paths"]["datasets"]
     pathProject = os.path.join(pathDatasets, projectName)
     pathRun = os.path.join(pathProject, run)
-    pathWeights = configData["paths"]["weights"]
+    # pathWeights = configData["paths"]["weights"]
     pathYamlFile = os.path.join(pathRun, "yolov8/data.yaml")
-
+    # print(pathWeights)
     # path to weights from previous run -> "best available weights"
     NrPreviousRun = int(run.split('_')[1]) - 1
 
     if NrPreviousRun < 0:
         NrPreviousRun = 0
 
-    previousRun = f"run_{NrPreviousRun}/yolov8/run_{NrPreviousRun}.pt"
+    model = configData["yolo"]["model"][0]
+    previousRun = f"run_{NrPreviousRun}/yolov8/run_{NrPreviousRun}{model}.pt"
     pathPreviousWeights = os.path.join(pathProject, previousRun)
 
-    if not pathWeights:
-        pathWeights = pathPreviousWeights
+    # if not pathWeights:
+    pathWeights = pathPreviousWeights
 
     model = YOLO(pathWeights)
     model.train(data=pathYamlFile, epochs=50, imgsz=640)
