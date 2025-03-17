@@ -75,8 +75,6 @@ def split_dataset(path_all_images, path_all_labels,split_ratios):
 
 def create_yaml_file(path_run, cls):
     path_yolo = os.path.join(path_run, 'yolov8')
-    # temp_path = "/Users/jannisbrakel"
-    # path = '../drive/MyDrive' + path_yolo[len(temp_path):]
     temp_path = "/home/jannis"
     path = ".." + path_yolo[len(temp_path):]
     path_text_file = os.path.join(path_yolo, "data.txt")
