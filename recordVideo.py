@@ -32,6 +32,5 @@ def record_video(output_filename, duration, fps=30.0, frame_size=(640, 480)):
 
 
 
-output_filename = '/media/visensys/New Volume/jannis/datasets/beerpong/run_2/videos/video_18.mp4'
+output_filename = ...
 record_video(output_filename, duration=15, fps=30.0, frame_size=(640, 480))
-
